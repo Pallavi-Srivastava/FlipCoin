@@ -6,7 +6,7 @@ heads=0
 tails=0
 while [[ $flips -le n ]]
 do
-     coin=$((1+RANDOM%2))
+     coin=$((RANDOM%2))
      flips=`expr $flips + 1`;
      if [ $coin -eq 1 ]
      then

@@ -1,6 +1,8 @@
 #!/bin/bash
 read -p "Enter How many times you want to flip:" n
 flips=1
+heads=0
+tails=0
 while [[ $flips -le $n ]]
 do
      coin=$((RANDOM%2))
